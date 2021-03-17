@@ -1,4 +1,5 @@
 <template>
+
   <div id="poke">
     <div class="card">
       <div class="card-image">
@@ -57,7 +58,7 @@ export default {
   },
   methods: {
     mudarSprite: function () {
-      if (this.isFront) {
+      if (this.isFront == true) {
         this.isFront = false;
         this.currentImg = this.pokemon.back;
       }else{
