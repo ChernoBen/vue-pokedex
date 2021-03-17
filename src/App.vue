@@ -1,8 +1,11 @@
 <template>
   <div id="app">
-    <dir v-for="(poke,index) in pokemons" :key="index">
+    <div class="column is-half is-offset-one-quarter">
+       <dir v-for="(poke,index) in pokemons" :key="index">
       <Pokemon :name="poke.name" :url="poke.url" :num="index"/>
     </dir>
+    </div>
+   
     
   </div>
 </template>
