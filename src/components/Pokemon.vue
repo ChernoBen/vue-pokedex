@@ -1,7 +1,7 @@
 <template>
-  <div id="pokemon">
+  <div id="poke">
     
-    <small>{{ url }}</small>
+    
 
     <div class="card">
       <div class="card-image">
@@ -23,12 +23,11 @@
         </div>
 
         <div class="content">
-          
+        <h1>vasio</h1>
         </div>
-      </div>
     </div>
-
-  </div>
+      
+    </div>
 </template>
 <script>
 import axios from "axios";
@@ -45,9 +44,9 @@ export default {
   data() {
     return {
       pokemon: {
-          type:"",
-          front:"",
-          back:""
+        type: "",
+        front: "",
+        back: "",
       },
     };
   },
@@ -66,8 +65,7 @@ export default {
 </script>
 
 <style scoped>
-#pokemon{
+#poke{
     margin-top:2%;
-
 }
 </style>
