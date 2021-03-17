@@ -5,10 +5,23 @@
 </template>
 
 <script>
-
-
+import axios from 'axios'
+let url = "https://pokeapi.co/api/v2/pokemon?limit=151&offset=0"
 export default {
-  name: 'App'
+  name: 'App',
+  data(){
+    return {
+      pokemons:[]
+    }
+  },
+  created:function(){
+    
+    axios.get(url).then(res=>{
+      
+      this.pokemons = res.data.results
+    })
+  }
+
 }
 </script>
 
